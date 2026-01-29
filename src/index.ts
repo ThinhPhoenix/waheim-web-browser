@@ -7,15 +7,7 @@ export class Browser {
                 if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
                 window.open(`x-safari-${url}`)
                 } else {
-                    const urlObj = new URL(url);
-                    const scheme = urlObj.protocol.replace(/:$/, "");
-                    const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=${scheme};action=android.intent.action.VIEW;S.browser_fallback_url=${encodeURIComponent(url)};package=com.android.chrome;end`;
-                    const link = document.createElement('a');
-                    link.href = intentUrl;
-                    link.target = '_blank';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
+                    window.open(url, '_blank', 'noopener,noreferrer');
                 }
             } else {
                 window.open(url, '_blank')
