@@ -1,6 +1,6 @@
 {
   "name": "waheim-web-browser",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Cross-framework web browser utility for launching URLs",
   "main": "lib/index.js",
   "module": "lib/index.js",

@@ -5,9 +5,12 @@ export class Browser {
         if (external) {
             if (isMobile) {
                 if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                    window.open(`x-safari-${url}`)
+                window.location.href = `x-safari-${url}`
                 } else {
-                    window.open(url, '_blank')
+                    const urlObj = new URL(url);
+                    const scheme = urlObj.protocol.replace(/:$/, "");
+                    const intentUrl = `intent://${urlObj.host}${urlObj.pathname}${urlObj.search}#Intent;scheme=${scheme};action=android.intent.action.VIEW;S.browser_fallback_url=${encodeURIComponent(url)};end`;
+                    window.location.href = intentUrl;
                 }
             } else {
                 window.open(url, '_blank')
