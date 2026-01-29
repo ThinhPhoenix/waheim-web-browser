@@ -1,0 +1,36 @@
+{
+  "name": "waheim-web-browser",
+  "version": "1.0.0",
+  "description": "Cross-framework web browser utility for launching URLs",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "browser",
+    "url",
+    "web",
+    "pwa",
+    "react-hook",
+    "vanilla-js"
+  ],
+  "author": "thinhphoenix",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "latest",
+    "react": "latest",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "react": "^18"
+  },
+  "scripts": {
+    "build": "tsc && bun build src/index.ts --target browser --format iife --outfile lib/sdk.js",
+    "dev": "tsc --watch"
+  }
+}
