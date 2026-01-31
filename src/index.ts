@@ -1,4 +1,3 @@
-const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 const isIOS = /iPhone|iPad|iPod/i.test(navigator.userAgent)
 const isAndroid = /Android/i.test(navigator.userAgent)
 const isPWA = window.matchMedia('(display-mode: standalone)').matches || 
