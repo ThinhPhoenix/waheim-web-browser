@@ -41,7 +41,7 @@ function App() {
 Include the SDK script in your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/waheim-web-browser@latest/lib/core.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/waheim-web-browser@latest/dist/core.min.js"></script>
 <script>
   const browser = new window.Browser()
   browser.launchUrl('https://example.com', true)
