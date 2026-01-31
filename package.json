@@ -1,7 +1,11 @@
 {
   "name": "waheim-web-browser",
-  "version": "1.0.13",
+  "version": "1.0.15",
   "description": "Cross-framework web browser utility for launching URLs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThinhPhoenix/waheim-web-browser.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
