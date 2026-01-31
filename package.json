@@ -30,7 +30,7 @@
     "react": "^18"
   },
   "scripts": {
-    "build": "tsc && bun build src/index.ts --target browser --format iife --outfile lib/sdk.js",
+    "build": "tsc && bun build src/index.ts --target browser --format iife --outfile lib/sdk.js | head -1",
     "dev": "tsc --watch"
   }
 }
