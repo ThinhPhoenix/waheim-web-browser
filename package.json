@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/ThinhPhoenix/waheim-web-browser.git"
   },
+  "homepage": "https://www.npmjs.com/package/waheim-web-browser",
+  "bugs": {
+    "url": "https://github.com/ThinhPhoenix/waheim-web-browser/issues"
+  },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
