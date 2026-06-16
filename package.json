@@ -6,6 +6,10 @@
     "type": "git",
     "url": "git+https://github.com/ThinhPhoenix/waheim-web-browser.git"
   },
+  "bugs": {
+    "url": "https://github.com/ThinhPhoenix/waheim-web-browser/issues"
+  },
+  "homepage": "https://github.com/ThinhPhoenix/waheim-web-browser#readme",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
